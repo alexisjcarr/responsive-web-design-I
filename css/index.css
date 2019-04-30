@@ -161,7 +161,19 @@ h1 {
   /* font-family: 'Dokdo', sans-serif; */
 }
 
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navigation .logo {
+  /* margin-left: 30px; */
+}
+
 nav {
+  display: flex;
+  justify-content: space-between;
   margin: auto 0;
   padding-bottom: 20px;
   width: 100%;
@@ -340,9 +352,22 @@ hr {
 
 /* 800px max-width (i.e. tablet) */
 @media screen and (max-width: 800px) {
+  .navigation {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .navigation nav {
+    justify-content: center;
+  }
+
   nav {
     display: flex;
+    justify-content: space-between;
     direction: row;
+    margin-left: 100px;
     margin: auto 0;
     padding-bottom: 20px 1%;
     width: 100%;
@@ -352,10 +377,6 @@ hr {
     text-decoration: none;
     color: gray;
     padding: 23px 1%;
-  }
-
-  nav a .logo {
-    order: 1;
   }
 
   header {
@@ -512,6 +533,12 @@ hr {
 
 /* 500px max-width (i.e. mobile) */
 @media screen and (max-width: 500px) {
+  .navigation {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0px;
+  }
+
   nav {
     display: flex;
     flex-direction: column;
