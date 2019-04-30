@@ -1,3 +1,699 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+h1 {
+  /* font-family: 'Dokdo', sans-serif; */
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navigation .logo {
+  /* margin-left: 30px; */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 0;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: gray;
+  padding: 23px;
+}
+
+nav .logo {
+  padding-left: 10px;
+}
+
+header {
+  line-height: 0.75;
+  margin-top: 50px;
+  width: 880px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header .title {
+  font-size: 68px;
+  text-align: center;
+}
+
+header .title button {
+  border: 1px solid black;
+  margin-top: 0px;
+  padding: 6px 40px;
+}
+
+header .title button:hover {
+  background: black;
+  color: white;
+}
+
+header img {
+  margin-bottom: 20px;
+}
+
+.top-content {
+  width: 880px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-content div {
+  text-align: justify;
+  padding: 10px;
+  /* width: 48%; */
+}
+
+.middle-img {
+  margin: 30px 0px;
+  width: 100%;
+  height: auto;
+}
+
+.bottom-content {
+  width: 880px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.bottom-content div {
+  /* width: 30%; */
+  padding: 30px;
+  text-align: justify;
+}
+
+.contact {
+  margin-top: 30px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  width: 880px;
+  margin: 0 auto;
+}
+
+footer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.services-top-content {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.services-top-content h1 {
+  font-size: 20px;
+}
+
+.flexy-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 880px;
+}
+
+.flexy-flex div {
+  border: 0.5px solid black;
+  background-color: #e8e8e8;
+  text-align: justify;
+  width: 400px;
+  height: 270px;
+  padding: 30px;
+  margin: 20px;
+}
+
+.flexy-flex div button {
+  border: 0.5px solid black;
+  padding: 6px 40px;
+  border-radius: 8px;
+  margin-top: 25px;
+  font-size: 15px;
+}
+
+.flexy-flex div button:hover {
+  background-color: black;
+  color: white;
+}
+
+section ul {
+  list-style-type: disc;
+}
+
+.services-bottom-content {
+  display: flex;
+  width: 880px;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.services-bottom-content div {
+  margin: 10px;
+  /* width: 48%; */
+}
+
+.services-bottom-content p {
+  text-align: justify;
+}
+
+.services-info-img {
+  width: 380px;
+}
+
+hr {
+  border: 0.5px solid black;
+  width: 880px;
+}
+
+.tab {
+  margin-left: 40px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 600px) {
+  .flexy-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+}
+
+/* 800px max-width (i.e. tablet) */
+@media screen and (max-width: 800px) {
+  .navigation {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav .logo {
+    text-align: center;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: gray;
+    text-align: center;
+  }
+
+  header {
+    line-height: 0.75;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  header .title {
+    font-size: 68px;
+    text-align: center;
+  }
+
+  header .title button {
+    border: 1px solid black;
+    margin-top: 0px;
+    padding: 6px 40px;
+  }
+
+  header .title button:hover {
+    background: black;
+    color: white;
+  }
+
+  header img {
+    display: none;
+  }
+
+  .top-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .top-content div {
+    text-align: justify;
+    /* width: 48%; */
+  }
+
+  .middle-img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .bottom-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .bottom-content div {
+    /* width: 30%; */
+    padding: 10px;
+    text-align: justify;
+  }
+
+  .contact {
+    margin-top: 30px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  footer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .services-top-content {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+
+  .services-top-content h1 {
+    font-size: 20px;
+  }
+
+  .flexy-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .flexy-flex div {
+    border: 0.5px solid black;
+    background-color: #e8e8e8;
+    text-align: justify;
+    width: 400px;
+    height: 270px;
+    padding: 30px;
+    margin: 20px;
+  }
+
+  .flexy-flex div button {
+    border: 0.5px solid black;
+    padding: 6px 40px;
+    border-radius: 8px;
+    margin-top: 25px;
+    font-size: 15px;
+  }
+
+  .flexy-flex div button:hover {
+    background-color: black;
+    color: white;
+  }
+
+  section ul {
+    list-style-type: disc;
+  }
+
+  .services-bottom-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 20px;
+  }
+
+  .services-bottom-content div {
+    margin: 10px;
+    /* width: 48%; */
+  }
+
+  .services-bottom-content p {
+    text-align: justify;
+  }
+
+  .services-info-img {
+    width: 380px;
+  }
+
+  hr {
+    border: 0.5px solid black;
+    width: 100%;
+  }
+
+  .tab {
+    margin-left: 40px;
+    line-height: 1.5;
+  }
+}
+
+/* 500px max-width (i.e. mobile) */
+@media screen and (max-width: 500px) {
+  .navigation {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    padding-bottom: 20px 1%;
+    width: 100%;
+  }
+
+  nav a {
+    text-align: center;
+    text-decoration: none;
+    color: gray;
+    border-bottom: 1px solid gray;
+  }
+
+  header {
+    line-height: 0.75;
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  header .title {
+    font-size: 68px;
+    text-align: center;
+  }
+
+  header .title button {
+    border: 1px solid black;
+    margin-top: 0px;
+    padding: 6px 40px;
+  }
+
+  header .title button:hover {
+    background: black;
+    color: white;
+  }
+
+  header img {
+    display: none;
+  }
+
+  .top-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-content div {
+    text-align: justify;
+    max-width: 100%;
+  }
+
+  .middle-img {
+    margin: 30px 0px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-size: 100% 100%;
+  }
+
+  .bottom-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottom-content div {
+    text-align: justify;
+    max-width: 100%;
+  }
+
+  .contact {
+    margin-top: 30px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  footer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .services-top-content {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+
+  .services-top-content h1 {
+    font-size: 20px;
+  }
+
+  .flexy-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .flexy-flex div {
+    border: 0.5px solid black;
+    background-color: #e8e8e8;
+    text-align: justify;
+    width: 400px;
+    height: 270px;
+    padding: 30px;
+    margin: 20px;
+  }
+
+  .flexy-flex div button {
+    border: 0.5px solid black;
+    padding: 6px 40px;
+    border-radius: 8px;
+    margin-top: 25px;
+    font-size: 15px;
+  }
+
+  .flexy-flex div button:hover {
+    background-color: black;
+    color: white;
+  }
+
+  section ul {
+    list-style-type: disc;
+  }
+
+  .services-bottom-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 20px;
+  }
+
+  .services-bottom-content div {
+    margin: 10px;
+    /* width: 48%; */
+  }
+
+  .services-bottom-content p {
+    text-align: justify;
+  }
+
+  .services-info-img {
+    width: 380px;
+  }
+
+  hr {
+    border: 0.5px solid black;
+    width: 100%;
+  }
+
+  .tab {
+    margin-left: 40px;
+    line-height: 1.5;
+  }
+}
