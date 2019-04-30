@@ -353,35 +353,29 @@ hr {
 /* 800px max-width (i.e. tablet) */
 @media screen and (max-width: 800px) {
   .navigation {
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap-reverse;
     flex-direction: row-reverse;
-    justify-content: space-between;
-  }
-
-  .navigation nav {
-    justify-content: center;
   }
 
   nav {
     display: flex;
-    justify-content: space-between;
-    direction: row;
-    margin-left: 100px;
-    margin: auto 0;
-    padding-bottom: 20px 1%;
-    width: 100%;
+    justify-content: center;
+  }
+
+  nav .logo {
+    text-align: center;
   }
 
   nav a {
     text-decoration: none;
     color: gray;
-    padding: 23px 1%;
+    text-align: center;
   }
 
   header {
     line-height: 0.75;
-    margin-top: 50px;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -545,11 +539,6 @@ hr {
     margin: auto 0;
     padding-bottom: 20px 1%;
     width: 100%;
-  }
-
-  nav a .logo {
-    order: 1;
-    /* padding-left: 10px 1%; */
   }
 
   nav a {
